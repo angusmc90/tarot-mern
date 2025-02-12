@@ -12,6 +12,7 @@ import './App.css';
 function App() {
 
   const [user, setUser] = useState({name:angusTest});
+  const [spread, setSpread] = useState({});
 
   return (
     <main className="App">
@@ -19,8 +20,8 @@ function App() {
         <>
         {/* <NavBar/> */}
         <Routes>
-          <Route path="" element={<DeckPage />}/>
-          <Route path="" element={<FortunePage />}/>
+          <Route path="/" element={<DeckPage setSpread={setSpread}/>}/>
+          <Route path="/fortune" element={<FortunePage spread={spread}/>}/>
         </Routes>
         </>
         :
