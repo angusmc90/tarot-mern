@@ -9,16 +9,15 @@ import './App.css';
 
 function App() {
 
-  // const [user, setUser] = useState({});
+  const [user, setUser] = useState({});
 
   return (
     <main className="App">
-      App
-    {/* { user ?
-      <FortunePage />
-      :
-      <AuthPage />
-    } */}
+      { user ?
+        <FortunePage />
+        :
+        <AuthPage />
+      }
     </main>
   );
 }
